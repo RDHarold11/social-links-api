@@ -5,8 +5,8 @@ const PORT = process.env.PORT || 3500;
 const linksRouter = require("./routes/links");
 const socialRouter = require("./routes/socialMedia");
 const mongoose = require("mongoose");
-const dbConnection = require("./config/DbConn");
 const cors = require("cors");
+const dbConnection = require("./config/DbConn");
 const { errorHandler, notFound } = require("./middlewares/errorHandler");
 
 dbConnection();
